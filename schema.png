@@ -1,1 +1,12 @@
+@startuml
 
+class Candidate {
+  - name: String
+  - voteCount: int
+  + Candidate(name: String, voteCount: int)
+  + getName(): String
+  + getVoteCount(): int
+  + setVoteCount(voteCount: int): void
+}
+
+@enduml
