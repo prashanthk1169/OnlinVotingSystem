@@ -1,1 +1,26 @@
+The Voting Application is designed as a simple Spring Boot application to
+manage candidate entries, allow users to cast votes, and provide information
+about the voting status. The application uses a RESTful API to handle different
+functionalities.
 
+major Components of this project
+   candidate
+   VoteService
+   VoteController
+
+Candidate:
+Represents an individual candidate.
+Contains attributes such as name and voteCount.
+Provides methods to access and update candidate information.
+
+
+VoteService:
+Implements the business logic for vote-related operations.
+Utilizes a Map<String, Candidate>  as a local in-memory data store to store
+candidate information.
+
+
+VoteController:
+Exposes RESTful APIs for different voting operations.
+Handles HTTP requests, interacts with the VoteService, and returns appropriate
+responses.
